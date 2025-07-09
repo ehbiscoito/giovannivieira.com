@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giovanni Vieira ✶ artista gráfico</title>
+  <link rel="icon" type="image/gif" href="./imagens/favicon.ico">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+  <div id="fundo-inicial"></div>
+
+  <!-- Pop-up de Boas-vindas -->
+  <div class="popup-wrapper">
+    <div id="popup-boas-vindas" class="popup">
+      <p>olá!</p>
+      <p>seja bem-vindo(a) ao meu site pessoal, aqui você pode encontrar todos os meus projetos.</p>
+      <p>divirta-se!</p>
+      <button id="btn-entrar">✶</button>
+    </div>
+  </div>
+
+  <!-- Página Inicial -->
+  <div id="pagina-inicial" class="oculto">
+    <div id="links-superiores">
+    <span onclick="abrirPopup('sobremim')">sobre mim</span>
+    <a href="imagens/currículo.pdf" target="_blank">currículo</a>
+    <a href="https://mail.google.com/mail/?view=cm&to=giovannivrdlvr@gmail.com" target="_blank">fala comigo</a>
+    </div>
+
+    <!-- Projeto 1 -->
+    <div class="bloco-projeto">
+      <img src="imagens/ícone_ESDI60.svg" alt="Miniatura do Projeto 1" onclick="abrirPopup('projeto1')" />
+      <div class="info-projeto" onclick="abrirPopup('projeto1')">
+        <h2>A Síntese do Fazer Esdiano</h2>
+        <div class="categorias">
+          <span class="categoria cartaz">cartaz</span>
+          <span class="categoria exposição">exposição</span>
+          <span class="categoria esdi">esdi</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Projeto 2 -->
+    <div class="bloco-projeto">
+      <img src="imagens/ícone_Manual.svg" alt="Miniatura do Projeto 2" onclick="abrirPopup('projeto2')" />
+      <div class="info-projeto" onclick="abrirPopup('projeto2')">
+        <h2>Manual de Sobrevivência Esdiano</h2>
+        <div class="categorias">
+          <span class="categoria manual">manual</span>
+          <span class="categoria diagramação">diagramação</span>
+          <span class="categoria capo">capo</span>
+          <span class="categoria esdi">esdi</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Projeto 3 -->
+    <div class="bloco-projeto">
+      <img src="imagens/ícone_Carminha.svg" alt="Miniatura do Projeto 3" onclick="abrirPopup('projeto3')" />
+      <div class="info-projeto" onclick="abrirPopup('projeto3')">
+        <h2>Carminha</h2>
+        <div class="categorias">
+          <span class="categoria cartaz">cartaz</span>
+          <span class="categoria festa">festa</span>
+          <span class="categoria capo">capo</span>
+          <span class="categoria esdi">esdi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projeto 4 -->
+    <div class="bloco-projeto">
+      <img src="imagens/ícone_Senciência_Animal.svg" alt="Miniatura do Projeto 4" onclick="abrirPopup('projeto4')" />
+      <div class="info-projeto" onclick="abrirPopup('projeto4')">
+        <h2>Senciência Animal</h2>
+        <div class="categorias">
+          <span class="categoria fotografia">fotografia</span>
+          <span class="categoria esdi">esdi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pop-up "sobre mim" -->
+  <div id="janela-sobremim" class="janela oculto">
+  <div class="barra-titulo">
+    <span>sobre mim</span>
+    <div class="botoes-topo">
+      <button class="fechar" onclick="fecharPopup(this)">X</button>
+    </div>
+  </div>
+  <div class="conteudo">
+    <img src="imagens/foto-de-perfil.gif" alt="Foto de Perfil" class="imagem-perfil">
+    <p>Deixa eu me apresentar melhor: me chamo Giovanni Vieira, sou designer gráfico baseado no Rio de Janeiro. Atuo principalmente com design editorial e identidade visual, áreas em que gosto de explorar narrativas visuais com clareza e impacto. Atualmente estou na metade da graduação em Design na ESDI/UERJ, onde também participo ativamente da vida acadêmica. Faço parte do Centro Acadêmico Carmen Portinho, já tive trabalhos expostos na mostra de 60 anos da Escola no MAM-Rio, e colaborei na organização do Pavão, evento tradicional realizado anualmente pelos estudantes.</p>
+  </div>
+</div>
+
+  <!-- Pop-up do Projeto 1 -->
+  <div id="janela-projeto1" class="janela oculto">
+    <div class="barra-titulo">
+      <span>A Síntese do Fazer Esdiano</span>
+      <div class="botoes-topo">
+        <button class="pdf" onclick="abrirPDF('imagens/apresentação_ESDI60.pdf')">PDF</button>
+        <button class="fechar" onclick="fecharPopup(this)">X</button>
+    </div>
+    </div>
+    <div class="conteudo">
+      <p><strong><em>Cliente:</strong> Museu de Arte Moderna do Rio</em></p>
+      <p><strong><em>Ano:</strong> 2023</em></p>
+      <p><strong><em>Design e direção artística:</strong> Giovanni Vieira ✶</em></p>
+      <p>Em comemoração aos 60 anos da ESDI, participei de uma exposição no MAM-Rio com um cartaz que reflete a vivência e o espírito experimental da Escola. A serra de fita, presente na Oficina de Materiais, foi usada como metáfora visual. A composição conta com colegas meus fotografados de forma lúdica e explora tons de azul e amarelo que se complementam e dão vida à peça.</p>
+      <img src="imagens/cartaz_ESDI60.webp" alt="Cartaz ESDI 60" class="imagem-projeto">
+      <img src="imagens/foto1_ESDI60.webp" alt="Foto 1 da exposição ESDI 60" class="imagem-projeto">
+      <img src="imagens/foto2_ESDI60.webp" alt="Foto 2 da exposição ESDI 60" class="imagem-projeto">
+    </div>
+  </div>
+
+  <!-- Pop-up do Projeto 2 -->
+  <div id="janela-projeto2" class="janela oculto">
+    <div class="barra-titulo">
+      <span>Manual de Sobrevivência Esdiano</span>
+      <div class="botoes-topo">
+        <button class="pdf" onclick="abrirPDF('imagens/Manual_de_Sobrevivência_Esdiano.pdf')">PDF</button>
+        <button class="fechar" onclick="fecharPopup(this)">X</button>
+    </div>
+    </div>
+    <div class="conteudo">
+      <p><strong><em>Cliente:</strong> Centro Acadêmico Carmen Portinho</em></p>
+      <p><strong><em>Ano:</strong> 2025</em></p>
+      <p><strong><em>Redação:</strong> Giovanni Vieira ✶, Jésus Pereira e Larissa Lopes</em></p>
+      <p><strong><em>Diagramação:</strong> Giovanni Vieira ✶</em></p>
+      <p>Material didático desenvolvido para auxiliar a integração dos egressos à Escola Superior de Desenho Industrial (ESDI/UERJ). O manual reúne informações essenciais sobre o funcionamento da Universidade, seus departamentos, movimentos estudantis, além de incluir um mapa e um fluxograma personalizados, pensados especialmente para a vivência de quem frequenta a ESDI.</p>
+      <img src="imagens/foto1_Manual.webp" alt="Manual de Sobrevivência Esdiano" class="imagem-projeto">
+      <img src="imagens/foto2_Manual.webp" alt="Foto 1 do Manual" class="imagem-projeto">
+      <img src="imagens/foto3_Manual.webp" alt="Foto 2 da Manual" class="imagem-projeto">
+      <img src="imagens/foto4_Manual.webp" alt="Foto 2 da Manual" class="imagem-projeto">
+    </div>
+  </div>
+
+  <!-- Pop-up do Projeto 3 -->
+  <div id="janela-projeto3" class="janela oculto">
+    <div class="barra-titulo">
+      <span>Carminha</span>
+      <div class="botoes-topo">
+        <button class="pdf" onclick="abrirPDF('imagens/apresentação_Carminha.pdf')">PDF</button>
+        <button class="fechar" onclick="fecharPopup(this)">X</button>
+    </div>
+    </div>
+    <div class="conteudo">
+      <p><strong><em>Cliente:</strong> Centro Acadêmico Carmen Portinho</em></p>
+      <p><strong><em>Ano:</strong> 2024-2025</em></p>
+      <p><strong><em>Design e direção artística:</strong> Giovanni Vieira ✶</em></p>
+      <p><strong><em>Logotipo:</strong> João Pedro Brito</em></p>
+      <p>Peças de divulgação produzidas para diferentes edições da festa “Carminha” durante meu mandato no Centro Acadêmico Carmen Portinho.</p>
+      <img src="imagens/cartaz_Carminha1.webp" alt="Cartaz da 1ª Carminha" class="imagem-projeto">
+      <img src="imagens/cartaz_Carminha2.webp" alt="Cartaz da 2ª Carminha" class="imagem-projeto">
+      <img src="imagens/cartaz_Carminha3.webp" alt="Cartaz da 3ª Carminha" class="imagem-projeto">
+    </div>
+  </div>
+
+  <!-- Pop-up do Projeto 4 -->
+  <div id="janela-projeto4" class="janela oculto">
+    <div class="barra-titulo">
+      <span>Senciência Animal</span>
+      <div class="botoes-topo">
+        <button class="pdf" onclick="abrirPDF('imagens/apresentação_Senciência_Animal.pdf')">PDF</button>
+        <button class="fechar" onclick="fecharPopup(this)">X</button>
+    </div>
+    </div>
+    <div class="conteudo">
+      <p><strong><em>Fotografia e pós-produção:</strong> Giovanni Vieira ✶</em></p>
+      <p>Inspirado pelo trabalho “Cordas do Coração” de Kazuhiko Matsumura, o projeto propõe capturar o olhar de um peixe na natureza, explorando a intensidade e a dinâmica de sua vida em movimento. Assim como o fotógrafo busca expressar as vivências internas de pessoas com demência e seus relacionamentos, aqui a fotografia é utilizada para transmitir a sensibilidade e profundidade da vida animal.</p>
+      <p><strong>Vida</strong></p>
+      <p>ISO 800; f/4,5; 1/13s</p>
+      <p>Nenhum ser é solitário. O peixe é apenas uma peça do ecossistema que faz seu mundo funcionar, ele sempre está cercado por outros seres ao seu redor e quando percebemos isso, ele se une ao plano de fundo, tornando viável o que conhecemos como vida.</p>
+      <img src="imagens/foto1_Senciência_Animal.webp" alt="Vida" class="imagem-projeto">
+      <p><strong>Bolha</strong></p>
+      <p>ISO 400; f/3,5; 1/4s</p>
+      <p>Tudo parece tão confortável, tão familiar. A bolha é como se fosse um ambiente regulador. Mas será que é isso que o peixe quer?</p>
+      <img src="imagens/foto2_Senciência_Animal.webp" alt="Bolha" class="imagem-projeto">
+      <p><strong>Lucidez</strong></p>
+      <p>ISO 800; f/5; 1/10s</p>
+      <p>Este é o momento em que as coisas começam a fazer sentido. É o momento em que o peixe sente euforia por perceber que sempre esteve nadando num mar de infinitas possibilidades.</p>
+      <img src="imagens/foto3_Senciência_Animal.webp" alt="Lucidez" class="imagem-projeto">
+      <p><strong>Efermidade</strong></p>
+      <p>ISO 100; f/5; 1/4s</p>
+      <p>É quando o sentimento de querer o mundo nas suas barbatanas é rapidamente substituído pela conformação de que o peixe não vai conseguir nadar pelo muito inteiro. No entanto, ele não vê problema nisso, afinal, nenhum animal consegue realizar todos os seus desejos em vida.</p>
+      <img src="imagens/foto4_Senciência_Animal.webp" alt="Efermidade" class="imagem-projeto">
+      <p><strong>Deságua</strong></p>
+      <p>ISO 100; f/5; 1/6s</p>
+      <p>O mundo lá em cima também parece ser interessante. De repente, a luz fica forte demais e o peixe fica desorientado. Ele não sabe o que vem pela frente, mas pela primeira vez, sente seu corpo desaguando num espaço sem água.</p>
+      <img src="imagens/foto5_Senciência_Animal.webp" alt="Deságua" class="imagem-projeto">
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <img src="imagens/Logotipo_1.gif" alt="Logotipo de Giovanni Vieira" id="logotipo" class="oculto">
+</body>
+</html>
